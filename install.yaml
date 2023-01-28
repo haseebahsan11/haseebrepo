@@ -18,4 +18,5 @@ service: name=httpd state=started
 
 - name: Using the debug module
 debug: msg="This is a DNS  playbook"
-
+- name: adding another debug file
+  debug: msg="we are learning git"
