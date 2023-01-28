@@ -17,8 +17,5 @@ copy: src=/tmp/index.html dest=/var/www/html/ backup=yes
 service: name=httpd state=started
 
 - name: Using the debug module
-debug: msg="This is a apache httpd playbook"
+debug: msg="This is a DNS  playbook"
 
-Took out the comment
-adding some more comments
-Adding addititonal comments for testing
