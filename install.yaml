@@ -8,15 +8,17 @@ gather_facts: yes
 
 tasks:
 - name: Install httpd package
-yum: name=httpd state=latest
+  yum: name=httpd state=latest
 
 - name: Copy index.html file
-copy: src=/tmp/index.html dest=/var/www/html/ backup=yes
+  copy: src=/tmp/index.html dest=/var/www/html/ backup=yes
 
 - name: restart httpd service
-service: name=httpd state=started
+  service: name=httpd state=started
 
 - name: Using the debug module
-debug: msg="This is a DNS  playbook"
+  debug: msg="This is a DNS  playbook"
 - name: adding another debug file
   debug: msg="we are learning git"
+- name: adding 3rd debug module
+  debug: msg="we are learning branching"  
